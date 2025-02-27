@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/plugins.css" />
+
+    <!-- search css -->
+    <link rel="stylesheet" href="search/search.css" />
+
+    <!-- quform css -->
+    <link rel="stylesheet" href="quform/css/base.css">
+
+    <!-- theme core css -->
+    <link href="css/styles.css" rel="stylesheet">
     <title>Contact - BEAT</title>
 </head>
 <body>
@@ -12,7 +21,7 @@
         <div class="container">
             <!-- Logo -->
             <a href="index.html" class="logo">
-                <img src="beat r.png" alt="Logo BEAT">
+                <img src="img/beat r.png" alt="Logo BEAT">
             </a>
     
             <!-- Menu principal -->
@@ -20,6 +29,7 @@
                 <ul class="nav-links">
                     <li><a href="index.html" class="nav-link">Accueil</a></li>
                     <li><a href="A_propos.html" class="nav-link">À propos</a></li>
+                    <li><a href="blog-grid.html" class="nav-link">Blog</a></li>
                     <li><a href="contact.html" class="nav-link active">Contact</a></li>
                 </ul>
             </nav>
@@ -36,61 +46,163 @@
     <!-- Section principale -->
     <main>
         <!-- Section Contact -->
-        <section class="contact">
+        <section class="bg-light">
             <div class="container">
-                <h1 class="degrade">Contactez-nous</h1>
-                <p class="sous-titre">Nous sommes à votre écoute pour répondre à vos questions et vous accompagner dans vos projets.</p>
-                
-                <!-- Formulaire de contact -->
-                <div class="formulaire-contact">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="nom">Nom complet</label>
-                            <input type="text" id="nom" name="nom" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Adresse e-mail</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="sujet">Sujet</label>
-                            <input type="text" id="sujet" name="sujet" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-contact">Envoyer</button>
-                    </form>
-                </div>
+                <div class="contact-us bg-light">
+                    <div class="row mt-n2-9">
+                        <div class="col-lg-7 mt-2-9 wow fadeInUp" data-wow-delay="100ms">
+                            <h2 class="text-secondary mb-4 h1">Write Us Something</h2>
+                            <form class="contact quform" action="https://advisorhtml.websitelayout.net/quform/contact.php" method="post" enctype="multipart/form-data" onclick="">
+                                <div class="quform-elements">
+                                    <div class="row">
 
-                <!-- Informations de contact -->
-                <div class="informations-contact">
-                    <h2>Coordonnées</h2>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Goma, Nord-Kivu, RDC</li>
-                        <li><i class="fas fa-phone"></i> +243 995 277 023</li>
-                        <li><i class="fas fa-envelope"></i> beatexpertise@gmail.com</li>
-                    </ul>
-                    <div class="reseaux-sociaux">
-                        <h2>Suivez-nous</h2>
-                        <div class="social-icons">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                        <!-- Begin Text input element -->
+                                        <div class="col-md-6">
+                                            <div class="quform-element form-group">
+                                                <label for="name">Your Name <span class="quform-required">*</span></label>
+                                                <div class="quform-input">
+                                                    <input class="form-control" id="name" type="text" name="name" placeholder="Your name here" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Text input element -->
+
+                                        <!-- Begin Text input element -->
+                                        <div class="col-md-6">
+                                            <div class="quform-element form-group">
+                                                <label for="email">Your Email <span class="quform-required">*</span></label>
+                                                <div class="quform-input">
+                                                    <input class="form-control" id="email" type="text" name="email" placeholder="Your email here" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Text input element -->
+
+                                        <!-- Begin Text input element -->
+                                        <div class="col-md-6">
+                                            <div class="quform-element form-group">
+                                                <label for="subject">Your Subject <span class="quform-required">*</span></label>
+                                                <div class="quform-input">
+                                                    <input class="form-control" id="subject" type="text" name="subject" placeholder="Your subject here" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Text input element -->
+
+                                        <!-- Begin Text input element -->
+                                        <div class="col-md-6">
+                                            <div class="quform-element form-group">
+                                                <label for="phone">Contact Number</label>
+                                                <div class="quform-input">
+                                                    <input class="form-control" id="phone" type="text" name="phone" placeholder="Your phone here" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Text input element -->
+
+                                        <!-- Begin Textarea element -->
+                                        <div class="col-md-12">
+                                            <div class="quform-element form-group">
+                                                <label for="message">Message <span class="quform-required">*</span></label>
+                                                <div class="quform-input">
+                                                    <textarea class="form-control" id="message" name="message" rows="3" placeholder="Tell us a few words"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Textarea element -->
+
+                                        <!-- Begin Captcha element -->
+                                        <div class="col-md-12">
+                                            <div class="quform-element">
+                                                <div class="form-group">
+                                                    <div class="quform-input">
+                                                        <input class="form-control" id="type_the_word" type="text" name="type_the_word" placeholder="Type the below word" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="quform-captcha">
+                                                        <div class="quform-captcha-inner">
+                                                            <img src="quform/images/captcha/courier-new-light.png" alt="...">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Captcha element -->
+
+                                        <!-- Begin Submit button -->
+                                        <div class="col-md-12">
+                                            <div class="quform-submit-inner">
+                                                <button class="butn-style4 border-0" type="submit"><span>Send Message</span></button>
+                                            </div>
+                                            <div class="quform-loading-wrap text-start"><span class="quform-loading"></span></div>
+                                        </div>
+                                        <!-- End Submit button -->
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-5 mt-2-9 wow fadeInUp" data-wow-delay="150ms">
+                            <div class="contact-details">
+                                <div class="section-title02 mb-6 w-60">
+                                    <span class="sm-title text-primary">Contact</span>
+                                    <h2 class="mb-0 text-white">Pour plus d'informations </h2>
+                                </div>
+                                <div class="d-flex contact-info align-items-center">
+                                    <div class="flex-shrink-0 contacts-icon">
+                                        <img src="img/icons/19.png" alt="...">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h5 class="text-white font-weight-600 h6">Send E-Mail</h5>
+                                        <h6 class="text-white font-weight-400 mb-0 opacity7 main-font">info@beatgoma.com</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex contact-info align-items-center">
+                                    <div class="flex-shrink-0 contacts-icon">
+                                        <img src="img/icons/20.png" alt="...">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h5 class="text-white font-weight-600 h6">Call Anytime</h5>
+                                        <h6 class="text-white font-weight-400 mb-0 opacity7 main-font">+243 995 277 023</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex contact-info align-items-center">
+                                    <div class="flex-shrink-0 contacts-icon">
+                                        <img src="img/icons/18.png" alt="...">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h5 class="text-white font-weight-600 h6">Locations</h5>
+                                        <h6 class="text-white font-weight-400 mb-0 opacity7 main-font">66 Guild Street 512B, Great North Town.</h6>
+                                    </div>
+                                </div>
+                                <div class="follow-company-icon2">
+                                    <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                                    <a href="#"> <i class="fa-brands fa-x-twitter"> </i> </a>
+                                    <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                                    <a href="#"> <i class="fab fa-pinterest-p"></i> </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- MAP
+        ================================================== -->
+        
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer class="footer">
         <div class="container">
             <!-- Section 1 : Logo et description -->
             <div class="footer-section">
-                <img src="beat r.png" alt="Logo BEAT" class="footer-logo">
+                <img src="img/beat r.png" alt="Logo BEAT" class="footer-logo">
                 <p class="footer-description">
                     BEAT est un bureau d'expertise et d'accompagnement technique basé à Goma, dédié à offrir des solutions innovantes pour le développement technologique de la région.
                 </p>

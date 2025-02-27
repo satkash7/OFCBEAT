@@ -5,23 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link id="mlc_chatinlie_styletag" rel="stylesheet" href="https://s3.mylivechat.com/livechat2/chatinline.css?&amp;culture=fr-FR&amp;mlcv=3017&amp;template=12">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>BEAT - Bureau d'Expertise et d'Accompagnement Technique</title>
+    <link rel="stylesheet" href="css/plugins.css">
+
+    <!-- search css -->
+    <link rel="stylesheet" href="search/search.css">
+
+    <!-- quform css -->
+    <link rel="stylesheet" href="quform/css/base.css">
+    <!-- <link rel="icon" type="image/png" href="beat r.png"> -->
+
 </head>
 <body>
     <header class="header">
         <div class="container">
             <!-- Logo -->
             <a href="index.html" class="logo">
-                <img src="beat r.png" alt="Logo BEAT">
+                <img src="img/beat r.png" alt="Logo BEAT">
             </a>
     
             <!-- Menu principal -->
             <nav class="nav">
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="A_propos.html" class="nav-link">À propos</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link" style = 'color:aliceblue;'>Accueil</a></li>
+                    <li><a href="A_propos.html" class="nav-link"style = 'color:aliceblue;'>À propos</a></li>
+                    <li><a href="blog-grid.html" class="nav-link"style = 'color:aliceblue;'>Blog</a></li>
+                    <li><a href="contact.html" class="nav-link"style = 'color:aliceblue;'>Contact</a></li>
+                    <!-- blog -->                    
+                     
+
                 </ul>
             </nav>
     
@@ -44,39 +57,87 @@
                 <a href="#services" class="btn-decouvrir">Découvrez nos services</a>
             </div>
             <div class="grdImage">
-                <img src="bureau2.jpg" alt="Bureau BEAT à Goma">
+                <img src="img/bureau2.jpg" alt="Bureau BEAT à Goma">
+            </div>
+        </section>
+        <section class="bg-img cover-background pb-19 pb-lg-24 secondary-overlay" data-overlay-dark="8" data-background="img/bg-02.jpg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 mb-1-9 mb-lg-0">
+                        <div class="section-title02">
+                            <h2 class="mb-0 ls-minus-2px display-5 font-weight-800 lh-1 w-100 text-white">Vivez une experience impecable</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="text-start text-lg-end">
+                            <a href="contact.html" class="butn-style4 white-hover"><span class="text-btn">plus d'informations</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-0 pb-0 overflow-visible bg-transparent">
+            <div class="container">
+                <div class="counter-style01 text-center border-radius-10">
+                    <div class="row mt-n1-9">
+                        <div class="col-sm-6 col-lg-3 mt-1-9">
+                            <div class="display-14 display-md-11 display-lg-8 mb-1 counter-number font-weight-800 text-secondary lh-1">
+                                <div class="odometer odometer-auto-theme" data-count="25">0</div>+
+                            </div>
+                            <p class="mb-0 opacity9">Years Experience</p>
+                        </div>
+                        <div class="col-sm-6 col-lg-3 mt-1-9">
+                            <div class="display-14 display-md-11 display-lg-8 mb-1 counter-number font-weight-800 text-secondary lh-1">
+                                <div class="odometer odometer-auto-theme" data-count="23">0</div>k
+                            </div>
+                            <p class="mb-0 opacity9">Project Completed</p>
+                        </div>
+                        <div class="col-sm-6 col-lg-3 mt-1-9">
+                            <div class="display-14 display-md-11 display-lg-8 mb-1 counter-number font-weight-800 text-secondary lh-1">
+                                <div class="odometer odometer-auto-theme" data-count="226">0</div>+
+                            </div>
+                            <p class="mb-0 opacity9">Consultation</p>
+                        </div>
+                        <div class="col-sm-6 col-lg-3 mt-1-9">
+                            <div class="display-14 display-md-11 display-lg-8 mb-1 counter-number font-weight-800 text-secondary lh-1">
+                                <div class="odometer odometer-auto-theme" data-count="958">0</div>+
+                            </div>
+                            <p class="mb-0 opacity9">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Section des services -->
         <section id="services" class="service">
             <div class="formation hidden">
-                <img src="environnement.png" alt="Icône environnement">
+                <img src="img/environnement.png" alt="Icône environnement">
                 <p>Le changement climatique est l'augmentation des températures mondiales due aux activités humaines, entraînant des phénomènes météorologiques extrêmes et des risques pour l'environnement et la santé.</p>
                 <button>S'inscrire</button>
             </div>
             <div class="formation hidden">
-                <img src="entreprenariat.png" alt="Icône entrepreneuriat">
+                <img src="img/entreprenariat.png" alt="Icône entrepreneuriat">
                 <p>L'entrepreneuriat, c'est l'art de transformer une idée en un projet concret en prenant des initiatives, en assumant des risques et en innovant pour répondre à des besoins ou résoudre des problèmes.</p>
                 <button>S'inscrire</button>
             </div>
             <div class="formation hidden">
-                <img src="catastrophe.png" alt="Icône réduction des risques">
+                <img src="img/catastrophe.png" alt="Icône réduction des risques">
                 <p>La réduction des risques de catastrophes consiste à anticiper, prévenir et préparer des solutions face aux dangers potentiels, afin de minimiser les impacts négatifs sur les individus, les biens et l'environnement.</p>
                 <button>S'inscrire</button>
             </div>
             <div class="formation hidden">
-                <img src="platform.png" alt="Icône innovation et technologie">
+                <img src="img/platform.png" alt="Icône innovation et technologie">
                 <p>L'innovation et la technologie permettent de repousser les limites de ce qui est possible, en créant de nouvelles solutions, produits ou services qui améliorent notre quotidien et répondent aux défis contemporains.</p>
                 <button>S'inscrire</button>
             </div>
             <div class="formation hidden">
-                <img src="networking.png" alt="Icône communication">
+                <img src="img/networking.png" alt="Icône communication">
                 <p>La communication pour le changement de comportement vise à influencer positivement les attitudes et actions des individus en utilisant des messages clairs, pertinents et motivants.</p>
                 <button>S'inscrire</button>
             </div>
             <div class="formation hidden">
-                <img src="personal-data.png" alt="Icône protection des personnes">
+                <img src="img/personal-data.png" alt="Icône protection des personnes">
                 <p>La protection des personnes et de l'environnement consiste à mettre en place des actions préventives et des politiques durables pour préserver la santé, la sécurité et le bien-être des individus.</p>
                 <button>S'inscrire</button>
             </div>
@@ -115,7 +176,7 @@
         <div class="container">
             <!-- Section 1 : Logo et description -->
             <div class="footer-section">
-                <img src="beat r.png" alt="Logo BEAT" class="footer-logo">
+                <img src="img/beat r.png" alt="Logo BEAT" class="footer-logo">
                 <p class="footer-description">
                     BEAT est un bureau d'expertise et d'accompagnement technique basé à Goma, dédié à offrir des solutions innovantes pour le développement technologique de la région.
                 </p>
@@ -159,6 +220,57 @@
             <p>&copy; 2023 BEAT. Tous droits réservés.</p>
         </div>
     </footer>
+    <div class="scroll-top-percentage"><span id="scroll-value"></span></div>
+
+    <!-- all js include start -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- jquery -->
+    <script src="js/core.min.js"></script>
+
+    <!-- Search -->
+    <script src="search/search.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/main.js"></script>
+
+    <!-- form plugins js -->
+    <script src="quform/js/plugins.js"></script>
+
+    <!-- form scripts js -->
+    <script src="quform/js/scripts.js"></script>
+
+    <!-- all js include end -->
 </body>
-<script src="app.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery.min.js"></script>
+
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- jquery -->
+    <script src="js/core.min.js"></script>
+
+    <!-- Search -->
+    <script src="search/search.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/main.js"></script>
+
+    <!-- form plugins js -->
+    <script src="quform/js/plugins.js"></script>
+
+    <!-- form scripts js -->
+    <script src="quform/js/scripts.js"
 </html>
